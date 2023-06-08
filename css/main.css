@@ -1,0 +1,30 @@
+@keyframes subir {
+    from{
+        display: none;
+        transform: translateY(-100px);
+    }
+    to{
+        display: block;
+        transform: translateY(0px);
+    }
+}
+main{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+#sinopse{
+    display: flex;flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    color: #c9c9c9;
+    font-family: Helvetica, sans-serif;
+    font-weight: bolder;
+}
+#sinopse h2{
+    margin-top: 20px;
+}
+#sinopse p{
+    max-width: 70%;
+}

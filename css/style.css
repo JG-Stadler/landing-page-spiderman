@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body,html{
+    width: 100%;
+    min-height: 100vh;
+}
+body{
+    background-image: url(../img/predios.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+#bg{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.664) 50%,rgba(0, 0, 0, 0.082));
+}
+@media(max-width:1000px){
+    #bg{
+        background-color: rgba(0, 0, 0, 0.384);
+    }
+}
