@@ -1,4 +1,4 @@
-@keyframes subir {
+@keyframes descer {
     from{
         display: none;
         transform: translateY(-100px);
@@ -8,10 +8,20 @@
         transform: translateY(0px);
     }
 }
+@keyframes subir {
+    from{
+        display: none;
+        transform: translateY(100px);
+    }
+    to{
+        display: block;
+        transform: translateY(0px);
+    }
+}
 main{
     display: flex;
     align-items: center;
-    padding: 50px;
+    justify-content: space-between;
 }
 #sinopse{
     display: flex;flex-direction: column;
@@ -21,10 +31,22 @@ main{
     color: #c9c9c9;
     font-family: Helvetica, sans-serif;
     font-weight: bolder;
+    max-width: 482px;
+    min-width: 241px;
+    margin-left: 80px;
+    animation: descer 1s;
 }
 #sinopse h2{
     margin-top: 20px;
 }
 #sinopse p{
     max-width: 70%;
+}
+@media(max-width:900px){
+    #miles{
+        display: none;
+    }
+    #sinopse{
+        margin: auto;
+    }
 }

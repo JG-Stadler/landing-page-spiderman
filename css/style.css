@@ -9,7 +9,6 @@ body,html{
 body{
     background-image: url(../img/predios.jpg);
     background-size: cover;
-    overflow: hidden;
 }
 #bg{
     position: fixed;
@@ -18,7 +17,7 @@ body{
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.664) 50%,rgba(0, 0, 0, 0.082));
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.788) 50%,rgba(0, 0, 0, 0.082));
 }
 @media(max-width:1000px){
     #bg{
