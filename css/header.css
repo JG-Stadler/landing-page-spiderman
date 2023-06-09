@@ -60,13 +60,15 @@ header img{
     }
     .navegation{
         position: fixed;
-        top:100px;
-        left: 0px;
+        inset:0;
+        padding-top: auto;
         transform: translateX(400%);
         transition: 0.5s;
-        background-color: var(--red);
+        background-color: black;
         width: 100vw;
+        height: 100vh;
         padding: 20px;
+        z-index: 2;
     }
     .navegation ul{
         flex-direction: column;
@@ -95,6 +97,9 @@ header img{
         transform-origin: left;
         transition: 0.7s;
     }
+    .menu-ativo{
+        z-index: 3;
+    }
     .nav-ativo li:hover::after{
         transform: scale(1);
     }
@@ -106,5 +111,11 @@ header img{
     }
     .menu-ativo #barra3{
         transform:translatey(-7px) rotate(-45deg);
+    }
+    .nav-ativo ul{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
     }
 }

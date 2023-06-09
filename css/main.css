@@ -1,27 +1,27 @@
-@keyframes descer {
-    from{
-        display: none;
-        transform: translateY(-100px);
-    }
-    to{
-        display: block;
-        transform: translateY(0px);
-    }
+@keyframes float {
+        0%{
+            transform: translateY(0%);
+        }
+        50%{
+            transform: translateY(-30px);
+        }
+        100%{
+            transform: translateY(0%);
+        }
 }
-@keyframes subir {
+@keyframes fadein {
     from{
-        display: none;
-        transform: translateY(100px);
+        opacity: 0;
     }
     to{
-        display: block;
-        transform: translateY(0px);
+        opacity: 100;
     }
 }
 main{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: max-content;
 }
 #sinopse{
     display: flex;flex-direction: column;
@@ -34,7 +34,7 @@ main{
     max-width: 482px;
     min-width: 241px;
     margin-left: 80px;
-    animation: descer 1s;
+    animation: fadein 3s;
 }
 #sinopse h2{
     margin-top: 20px;
@@ -42,11 +42,19 @@ main{
 #sinopse p{
     max-width: 70%;
 }
+#miles{
+    animation:float 5s ease-in-out infinite;
+}
 @media(max-width:900px){
+    #sinopse{
+        position: fixed;
+        inset: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        animation: none;
+        margin: auto;
+    }
     #miles{
         display: none;
-    }
-    #sinopse{
-        margin: auto;
     }
 }
