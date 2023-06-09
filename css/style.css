@@ -19,8 +19,8 @@ body{
     z-index: -1;
     background-image: linear-gradient(to right,rgba(0, 0, 0, 0.788) 50%,rgba(0, 0, 0, 0.082));
 }
-@media(max-width:1000px){
+@media(max-width:900px){
     #bg{
-        background-color: rgba(0, 0, 0, 0.384);
+        background-image: none;
     }
 }
